@@ -1,0 +1,32 @@
+a{
+    color:black;
+}
+text-center{
+    text-align: center;
+}
+h3{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 100px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+h1{
+    text-align: center;
+}
+page-intro{
+
+    .bg-image{
+        background-image: url('../../assets/img/girl.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .no-scroll .scroll-content{
+        overflow: hidden;
+    }
+
+}
+ion-content.background{
+    --background:url('../../assets/img/cover.jpeg')0 0/100% 100% no-repeat; 
+}

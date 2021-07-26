@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-title style="font-family: cursive; font-weight: bolder;">
+   
+     Health Check
+    
+    
+    </ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" style="font-family: Georgia; font-weight: bolder;">Contact List</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card padding class="color">
+    <ion-card-content >
+      <ion-item padding class="color">
+        <ion-label position="floating" style="font-family: Georgia; font-weight: bolder; color: rgb(20, 19, 20);">Username</ion-label>
+        <ion-input [(ngModel)]="contName" enterkeyhint="search"></ion-input>
+      </ion-item>
+      <ion-item padding class="color">
+        <ion-label position="floating" style="font-family: Georgia; font-weight: bolder; color: rgb(20, 19, 20);">Password</ion-label>
+        <ion-input [type]="contNumber"></ion-input>
+        <ion-icon name="eye" [color]="gray" item-end (click)="togglePassword()"></ion-icon>
+      </ion-item>
+      <br />
+      <ion-button expand="full" fill="solid" color="success" shape="round" style="font-family: cursive; font-weight: bolder;" routerLink="/tab2">Login</ion-button>
+      <br>
+      <h4>Don't have an Account?<a href="/tab1">Sign up</a>.</h4>
+      
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-title>
+      Health Check
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content padding class="background">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-card padding class="color">
+    <ion-card-content>
+      <ion-item padding class="color">
+        <ion-label position="floating">First Name</ion-label>
+        <ion-input [(ngModel)]="contName" enterkeyhint="search"></ion-input>
+      </ion-item>
+      <ion-item padding class="color">
+        <ion-label position="floating">Family Name</ion-label>
+        <ion-input [(ngModel)]="contFamily" enterkeyhint="search"></ion-input>
+      </ion-item>
+      <ion-item padding class="color">
+        <ion-label position="floating">Username</ion-label>
+        <ion-input [(ngModel)]="contUname"></ion-input>
+      </ion-item>
+      <ion-item padding class="color">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input [type]="contPassword"></ion-input>
+        <ion-icon name="eye" [color]="gray" item-end (click)="togglePassword()"></ion-icon>
+      </ion-item>
+      <br />
+      <ion-button expand="full" fill="solid" shape="round" color="success" routerLink="/tab2">Sign In</ion-button>
+      <br>
+      <h4>Already have an Account?<a href="/tab5">Log in</a>.</h4>
+
+      
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
